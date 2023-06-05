@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;400;600;800&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 0px;
+}
+
+:root {
+    --cor-primaria: #E8EAF6;
+    --cor-secundaria: #4b5175;
+    --cor-preto: #000000;
+    --cor-branco: #FFFFFF;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+hgroup {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+hgroup div img {
+    width: 200px;
+    cursor: pointer;
+}
+
+hgroup nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 30px;
+}
+
+hgroup nav ul li a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+    opacity: 100%;
+    transition: all 0.2s;
+}
+
+hgroup nav ul li a:after {
+    width: 0%;
+    height: 2px;
+    content: "";
+    display: block;
+    background-color: var(--cor-secundaria);
+    transition: width 0.25s ease-in;
+}
+
+hgroup nav ul li a:hover {
+    opacity: 70%;
+}
+
+hgroup nav ul li a:hover::after {
+    width: 100%;
+    opacity: 70%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-carrossel {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/thumbnail-01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-carrossel {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-carrossel h1 {
+    font-size: 4.8rem;
+    margin-bottom: 5px;
+    color: var(--cor-branco);
+}
+
+.container-carrossel p {
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: var(--cor-branco);
+}
+
+.container-carrossel button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.container-carrossel button:hover {
+    filter: brightness(115%);
+}
+
+.secao-01 {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 30px;
+}
+
+.secao-01 .imagem-secao {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: url(../img/thumbnail-02.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
+
+.secao-02 {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 30px;
+}
+
+.perfil-equipe {
+    width: 23.33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.integrantes {
+    width: 300px;
+    height: 300px;
+    border-radius: 99%;
+    background-color: var(--cor-secundaria);
+}
+
+#gilmar {
+    background: url(../img/foto-gilmar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#lucas {
+    background: url(../img/foto-lucas.png);
+    background-size: cover;
+    background-position-y: -50px;
+    background-repeat: no-repeat;
+}
+
+#victor {
+    background: url(../img/foto-victor.jpeg);
+    background-size: cover;
+    background-position: 0px -40px;
+    background-position: no-repeat;
+}
+
+.perfil-equipe h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    
+    margin-top: 30px;
+}
+
+.perfil-equipe h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.perfil-equipe i {
+    font-size: 2.2rem;
+    padding-top: 5px;
+    cursor: pointer;
+    opacity: 100%;
+    transition: all 0.3s;
+}
+
+.perfil-equipe i:hover {
+    opacity: 70%;
+    transform: scale(1.25);
+}
+
+.secao-03 {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 30px;
+}
+
+.secao-03 .imagem-secao {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 100%;
+    background-color: var(--cor-secundaria); */
+}
+
+.secao-03 .imagem-secao img {
+    width: 200px;
+    height: auto;
+}
+
+.secao-04 {
+    width: 70%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 30px;
+}
+
+.secao-04 .imagem-secao {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 100%;
+    background-color: var(--cor-secundaria); */
+}
+
+.secao-04 .imagem-secao img {
+    width: 350px;
+    height: auto;
+}
+
+.texto-secao {
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px 0px;
+}
+
+.texto-secao h2 {
+    font-size: 2.4rem;
+}
+
+.texto-secao p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.texto-secao h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.secao-05 {
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 60px;
+}
+
+.secao-05 .texto-secao {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px 0px;
+}
+
+.secao-05 .texto-secao h2 {
+    font-size: 2.4rem;
+}
+
+.secao-05 .texto-secao p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.secao-05 .texto-secao h3 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.formulario {
+    width: 40%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    /* margin-top: 8px; */
+    resize: none;
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: 3px solid #4b5175;
+}
+
+.formulario button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branco);
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.formulario button:hover {
+    filter: brightness(115%);
+}
+
+
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container a {
+    text-decoration: none;
+}
+
+.footer-container p {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+    transition: all 0.3s;
+}
+
+.footer-container p:hover {
+    filter: brightness(115%);
+}
