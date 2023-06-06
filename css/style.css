@@ -414,3 +414,54 @@ footer {
 .footer-container p:hover {
     filter: brightness(115%);
 }
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 32.5%;
+    }
+    .secao-02 {
+        flex-direction: column;
+    }
+    hgroup div img {
+        width: 100px;
+    }
+    .secao-01 .imagem-secao {
+        width: 120px;
+        height: 120px;
+    }
+    .secao-03 .imagem-secao img {
+        width: 120px;
+        height: auto;
+    }
+    .secao-04 .imagem-secao img {
+        width: 120px;
+        height: auto;
+    }
+    .integrantes {
+        width: 100px;
+        height: 100px;
+        border-radius: 99%;
+        background-color: var(--cor-secundaria);
+    }
+    header {
+        height: 8vh;
+    }
+    .secao-01 {
+        height: 40vh;
+    }
+    .secao-02 {
+        height: 80vh;
+    }
+    .secao-03 {
+        height: 40vh;
+    }
+    .secao-04 {
+        height: 40vh;
+    }
+    .secao-05 {
+        height: 40vh;
+    }
+    footer {
+        height: 10vh;
+    }
+}
